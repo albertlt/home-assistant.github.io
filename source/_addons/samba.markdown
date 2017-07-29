@@ -39,3 +39,5 @@ Configuration variables:
 - **username** (*Optional*): The username for logging in if guest login is not used.
 - **password** (*Optional*): Password for `username`. An empty password is not supported.
 - **interface** (*Optional*): Interface on that will start the share. Normaly is `eth0` for ethernet wired connection and `wlan0` for wireless connection.
+
+Note: if `eth0` or `wlan0` does not work, you can set the interface to blank (eq: interface="") to listen on every interface. Restart the SAMBA addon and then refresh the Log to find out the correct interface name.
